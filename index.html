@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unsplash Images</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="divb">
+      <button id="mode" class="btn7" type="button">
+        <img id="darkimg" src="./img/brightness.png" alt="rasm" width="20px" />
+        Light mode
+      </button>
+    </div>
+
+    <div class="container">
+      <h2 class="h1">Unsplash Images</h2>
+
+      <form id="form">
+        <input id="searchinp" type="text" placeholder="Real madrid" required />
+        <div class="div">
+          <button class="btn" type="submit">add</button>
+          <button class="btn1 hidden" type="submit">remuve</button>
+        </div>
+      </form>
+      <ul id="productList"></ul>
+    </div>
+    <h2 class="rasm1 hidden">Loading...</h2>
+    <h2 id="rasm1" class="rasm1 hidden">No Results Found...</h2>
+
+    <script defer src="./app.js"></script>
+  </body>
+</html>
